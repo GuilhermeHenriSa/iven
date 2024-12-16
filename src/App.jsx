@@ -1,6 +1,7 @@
 import "./App.css";
 import Headers from "./components/Headers";
 import SideBar from "./components/SideBar";
+import ComputersPage from "./pages/ComputersPage";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <Headers></Headers>
       <div className="flex">
         <SideBar></SideBar>
-        <div className="w-full h-screen bg-gray-900"></div>
+        <ComputersPage></ComputersPage>
       </div>
     </>
   );
