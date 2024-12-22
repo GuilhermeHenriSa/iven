@@ -22,7 +22,11 @@ createRoot(document.getElementById("root")).render(
         />
         <Route
           path="/computer-details/:computerId"
-          element={<ComputerDetails></ComputerDetails>}
+          element={
+            <QueryClientProvider client={queryClient}>
+              <ComputerDetails></ComputerDetails>
+            </QueryClientProvider>
+          }
         ></Route>
       </Routes>
     </BrowserRouter>
